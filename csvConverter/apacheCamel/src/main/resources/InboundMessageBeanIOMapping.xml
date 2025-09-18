@@ -1,0 +1,13 @@
+<beanio xmlns="http://www.beanio.org/2012/03"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <stream name="inboundMessageStream" format="csv">
+        <record name="inboundNameAddress" class="com.spring.camel.apacheCamel.bean.InboundNameAddress">
+            <field name="name" minOccurs="1"/>
+            <field name="houseNumber" minOccurs="1"/>
+            <field name="city" minOccurs="1"/>
+            <field name="province" minOccurs="1"/>
+            <field name="postalCode" minOccurs="1"/>
+        </record>
+    </stream>
+</beanio>
